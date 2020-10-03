@@ -95,7 +95,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+/*use for reference and then delete--
 html {
   background-color: #112a46;
   height: 100%;
@@ -109,14 +109,12 @@ body {
 }
 
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
   display: flex;
   justify-content: space-between;
   font-weight: 700;
 }
 
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+.fact-1, .fact-2, .fact-3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,11 +125,99 @@ body {
   width: 30%;
   padding: 10px 20px;
 }
-.div-2 {
+.fact-2 {
   border-left: 3px lightgrey dashed;
   border-right: 3px lightgrey dashed;
 }
+**/
+html {
+  background-color: #112a46;
+  height: 100%;
+  width: 100%;
+}
 
+body {
+  font-family: 'Playfair Display', serif;
+  padding: 0 2em;
+  font-size: 1.25em;
+  height: 100%;
+  color: #acc8e5;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+header h1{
+  font-size: 3.75em;
+}
+header, footer {
+  height: 80px;
+  width: 100%;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px pink solid;
+  height: 250px;
+  width: 100%;
+  padding: 2em 0 0 0;
+}
+main p {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+main span{
+  color: pink;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.fun-facts {
+  color: #acc8e5;
+  line-height: 1.5em;
+  font-size: 1.4em;
+  padding: 20px 0;
+  width: 30%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fact-2 {
+  border-left: 2px pink dashed;
+  border-right: 2px pink dashed;
+  padding: 0 20px 0 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 3px pink solid;
+}
+
+footer ul {
+  display: flex;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+footer ul li {
+  font-size: 2.3em;
+  padding: 0 1em 0 0;
+  text-decoration: none;
+}
 
 
 
